@@ -2,27 +2,21 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
-	protected function _initDoctype()
-	{
+	protected function _initDoctype() {
 		$this->bootstrap('view');
 		$view = $this->getResource('view');
         $view->doctype('HTML5');
        	$view->addBasePath(SITE_PATH . '/lib/application/views');
        	$view->addHelperPath(SITE_PATH . '/lib/application/views/helpers', 'View_Helper');
-
-
-
        	Zend_Controller_Action_HelperBroker::addPath(SITE_PATH . '/lib/application/helpers', 'Helper');
        	Zend_Controller_Action_HelperBroker::addPath(SITE_PATH . '/application/helpers', 'Helper');
     }
 
-	protected function _initAutoload()
-	{
+	protected function _initAutoload() {
 		$autoloader = new Zend_Application_Module_Autoloader(array(
 			'namespace' => 'Site_',
 			'basePath'  => SITE_PATH . '/application',
 		));
-		//$autoloader->addResourceType('my', SITE_PATH . '/lib/application', 'Site_');
 		return $autoloader;
 	}
 

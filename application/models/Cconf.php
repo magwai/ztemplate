@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Cconf extends Magwai_Model_Cconf
-{
+class Site_Model_Cconf extends Magwai_Model_Cconf {
+
 }

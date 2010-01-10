@@ -1,6 +1,5 @@
 <?php
 
-class CindexController extends Magwai_Controller_Cindex
-{
-}
+class CindexController extends Magwai_Controller_Cindex {
 
+}

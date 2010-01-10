@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Crole extends Magwai_Model_Crole
-{
+class Site_Model_Crole extends Magwai_Model_Crole {
+
 }

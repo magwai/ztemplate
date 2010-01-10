@@ -1,9 +1,4 @@
 <?php
 
 $this->headTitle($this->card->title);
-
-?>
-<div class="ui-widget">
-	<div class="ui-widget-header ui-corner-top ss-widget-header"><?php echo $this->card->title; ?></div>
-	<div class="ui-widget-content ui-corner-bottom ss-widget-content"><?php echo $this->card->message; ?></div>
-</div>
+echo $this->card->message;
