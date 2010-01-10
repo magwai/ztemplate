@@ -1,0 +1,25 @@
+<?php
+
+$this->headTitle($this->ah('txt', 'site_title'), 'PREPEND')->setSeparator(' - ');
+echo $this->doctype()
+
+?>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<?php echo	$this	->headTitle() ?>
+		<?php echo	$this	->headMeta($this->ah('txt', 'meta_keywords'), 'keywords')
+							->headMeta($this->ah('txt', 'meta_description'), 'description')
+		?>
+		<?php echo	$this	->headLink(array('rel' => 'favicon', 'href' => '/favicon.ico'))
+							->appendStylesheet('/img/style.css')
+		?>
+	</head>
+	<body>
+		<?php echo	$this	->layout()->content;
+		?>
+		<?php echo	$this	->headScript('file', '/js/main.js').
+					$this	->inlineScript('script', $this->ah('js')->renderEval());
+		?>
+	</body>
+</html>
