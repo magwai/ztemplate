@@ -34,7 +34,7 @@ CREATE TABLE `cconf` (
   KEY `i_action` (`action`),
   KEY `i_key` (`key`),
   KEY `i_type` (`type`)
-) ENGINE=MyISAM AUTO_INCREMENT=208 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=209 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `cresource` (
 
 LOCK TABLES `cresource` WRITE;
 /*!40000 ALTER TABLE `cresource` DISABLE KEYS */;
-INSERT INTO `cresource` VALUES (1,'ÐŸÐ°Ð½ÐµÐ»ÑŒ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ','ctl',0),(2,'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹','',1),(3,'ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€ÑÐºÐ¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹','',1);
+INSERT INTO `cresource` VALUES (1,'ÐŸÐ°Ð½ÐµÐ»ÑŒ ÑƒÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ñ','ctl',0),(2,'ÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÑÐºÐ¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹','',1),(3,'ÐÐ´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€ÑÐºÐ¸Ðµ Ñ€Ð°Ð·Ð´ÐµÐ»Ñ‹','admin',1);
 /*!40000 ALTER TABLE `cresource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -282,7 +282,7 @@ CREATE TABLE `page` (
   PRIMARY KEY (`id`),
   KEY `i_can_edit` (`cedit`),
   KEY `i_stitle` (`stitle`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -388,4 +388,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-01-11  1:18:37
+-- Dump completed on 2010-01-11 23:29:26
