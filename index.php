@@ -1,6 +1,7 @@
 <?php
 
-defined('SITE_PATH') || define('SITE_PATH', realpath(dirname(__FILE__).'/'));
+defined('SITE_PATH') || define('SITE_PATH', realpath(dirname(__FILE__)).'/');
+defined('APPLICATION_PATH') || define('APPLICATION_PATH', SITE_PATH.'application/');
 defined('APPLICATION_ENV') || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
 set_include_path(implode(PATH_SEPARATOR, array(
