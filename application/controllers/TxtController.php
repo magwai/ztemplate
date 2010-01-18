@@ -1,5 +1,5 @@
 <?php
 
-class TxtController extends Magwai_Controller_Txt {
+class TxtController extends Zkernel_Controller_Txt {
 
 }

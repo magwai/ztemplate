@@ -1,5 +1,5 @@
 <?php
 
-class CmenuController extends Magwai_Controller_Cmenu {
+class CmenuController extends Zkernel_Controller_Cmenu {
 
 }

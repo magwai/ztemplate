@@ -1,5 +1,5 @@
 <?php
 
-class CindexController extends Magwai_Controller_Cindex {
+class CindexController extends Zkernel_Controller_Cindex {
 
 }

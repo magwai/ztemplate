@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Cuser extends Magwai_Model_Cuser {
+class Default_Model_Cuser extends Zkernel_Db_Model_Cuser {
 
 }

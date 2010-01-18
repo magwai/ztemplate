@@ -1,5 +1,5 @@
 <?php
 
-class MinifyController extends Magwai_Controller_Minify {
+class MinifyController extends Zkernel_Controller_Minify {
 
 }

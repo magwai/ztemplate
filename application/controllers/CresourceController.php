@@ -1,5 +1,5 @@
 <?php
 
-class CresourceController extends Magwai_Controller_Cresource {
+class CresourceController extends Zkernel_Controller_Cresource {
 
 }

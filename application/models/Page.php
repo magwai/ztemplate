@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Page extends Magwai_Model_Page {
+class Default_Model_Page extends Zkernel_Db_Model_Page {
 
 }

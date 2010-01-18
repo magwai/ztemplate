@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Crolerefer extends Magwai_Model_Crolerefer {
+class Default_Model_Crolerefer extends Zkernel_Db_Model_Crolerefer {
 
 }

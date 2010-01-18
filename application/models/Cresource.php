@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Cresource extends Magwai_Model_Cresource {
+class Default_Model_Cresource extends Zkernel_Db_Model_Cresource {
 
 }

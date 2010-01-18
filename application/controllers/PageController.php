@@ -1,5 +1,5 @@
 <?php
 
-class PageController extends Magwai_Controller_Page {
+class PageController extends Zkernel_Controller_Page {
 
 }

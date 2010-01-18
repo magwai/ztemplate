@@ -1,5 +1,5 @@
 <?php
 
-class ErrorController extends Magwai_Controller_Error {
+class ErrorController extends Zkernel_Controller_Error {
 
 }

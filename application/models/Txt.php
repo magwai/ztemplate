@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Txt extends Magwai_Model_Txt {
+class Default_Model_Txt extends Zkernel_Db_Model_Txt {
 
 }

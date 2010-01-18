@@ -1,5 +1,5 @@
 <?php
 
-class Site_Model_Crule extends Magwai_Model_Crule {
+class Default_Model_Crule extends Zkernel_Db_Model_Crule {
 
 }

@@ -1,5 +1,5 @@
 <?php
 
-class CconfController extends Magwai_Controller_Cconf {
+class CconfController extends Zkernel_Controller_Cconf {
 
 }

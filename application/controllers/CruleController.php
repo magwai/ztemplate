@@ -1,5 +1,5 @@
 <?php
 
-class CruleController extends Magwai_Controller_Crule {
+class CruleController extends Zkernel_Controller_Crule {
 
 }

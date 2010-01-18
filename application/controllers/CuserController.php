@@ -1,5 +1,5 @@
 <?php
 
-class CuserController extends Magwai_Controller_Cuser {
+class CuserController extends Zkernel_Controller_Cuser {
 
 }
