@@ -1,2 +1,9 @@
-<?php echo $this->card->message;
+<?php
+
+$data_valid = $this->page($this->id, 'all');
+
+$this->headTitle($data_valid->title);
+
+echo $data_valid->message;
+
 ?>

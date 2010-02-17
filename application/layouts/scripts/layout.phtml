@@ -1,25 +1,33 @@
 <?php
 
-$this->headTitle($this->ah('txt', 'site_title'), 'PREPEND')->setSeparator(' - ');
+$this	->headScript()
+		->offsetSetFile(100, '/js/main.js');
+
+$this	->inlineScript()
+		->offsetSetScript(1, '$(function() { ds.init(); });');
+
+$this	->headLink()
+		->offsetSetAlternate(150, array('rel' => 'favicon', 'href' => '/favicon.ico'))
+		->offsetSetStylesheet(100, '/img/style.css', 'all');
+
+$this	->headMeta($this->ah('txt', 'meta_keywords'), 'keywords')
+		->headMeta($this->ah('txt', 'meta_description'), 'description');
+
+$this	->headTitle($this->ah('txt', 'site_title'), 'PREPEND')->setSeparator(' - ');
+
 echo $this->doctype('HTML5')
 
 ?>
 <html>
 	<head>
 		<meta charset=utf-8>
-		<?php echo	$this	->headTitle() ?>
-		<?php echo	$this	->headMeta($this->ah('txt', 'meta_keywords'), 'keywords')
-							->headMeta($this->ah('txt', 'meta_description'), 'description')
-		?>
-		<?php echo	$this	->headLink(array('rel' => 'favicon', 'href' => '/favicon.ico'))
-							->appendStylesheet('/img/style.css')
-		?>
+		<?php echo $this->headMeta() ?>
+		<?php echo $this->headTitle() ?>
+		<?php echo $this->headLink() ?>
 	</head>
 	<body>
-		<?php echo	$this	->layout()->content;
-		?>
-		<?php echo	$this	->headScript('file', '/js/main.js').
-					$this	->inlineScript('script', $this->ah('js')->renderEval());
-		?>
+		<?php echo $this->layout()->content ?>
+		<?php echo $this->headSingle() ?>
+		<?php echo $this->inlineScript() ?>
 	</body>
 </html>

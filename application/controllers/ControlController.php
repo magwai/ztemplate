@@ -1,7 +1,5 @@
 <?php
 
-class ControlController extends Zkernel_Controller_Control
-{
+class ControlController extends Zkernel_Controller_Control {
 
 }
-
