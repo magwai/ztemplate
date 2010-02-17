@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.37, for debian-linux-gnu (i486)
 --
--- Host: localhost    Database: template
+-- Host: localhost    Database: ztemplate
 -- ------------------------------------------------------
 -- Server version	5.1.37-1ubuntu5
 
@@ -347,7 +347,7 @@ CREATE TABLE `url` (
 
 LOCK TABLES `url` WRITE;
 /*!40000 ALTER TABLE `url` DISABLE KEYS */;
-INSERT INTO `url` VALUES (47,'page/(.*)','page','','id',1),(48,'ggg/(.*)/(.*)','page','','dd,ff',2);
+INSERT INTO `url` VALUES (47,'page/(.*)','page','','id',1);
 /*!40000 ALTER TABLE `url` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -360,4 +360,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-02-17 13:24:43
+-- Dump completed on 2010-02-17 17:18:03
