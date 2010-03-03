@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: ztemplate
 -- ------------------------------------------------------
--- Server version	5.1.37-1ubuntu5
+-- Server version	5.1.37-1ubuntu5.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -193,7 +193,7 @@ DROP TABLE IF EXISTS `crule_resource`;
 CREATE TABLE `crule_resource` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `parentid` int(11) DEFAULT NULL,
-  `resource` char(1) DEFAULT '0',
+  `resource` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `i_parentid` (`parentid`),
   KEY `i_resource` (`resource`)
@@ -206,7 +206,7 @@ CREATE TABLE `crule_resource` (
 
 LOCK TABLES `crule_resource` WRITE;
 /*!40000 ALTER TABLE `crule_resource` DISABLE KEYS */;
-INSERT INTO `crule_resource` VALUES (4,2,'2');
+INSERT INTO `crule_resource` VALUES (4,2,2);
 /*!40000 ALTER TABLE `crule_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,7 +220,7 @@ DROP TABLE IF EXISTS `crule_role`;
 CREATE TABLE `crule_role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `parentid` int(11) DEFAULT NULL,
-  `role` char(1) DEFAULT '0',
+  `role` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `i_parentid` (`parentid`),
   KEY `i_role` (`role`)
@@ -233,7 +233,7 @@ CREATE TABLE `crule_role` (
 
 LOCK TABLES `crule_role` WRITE;
 /*!40000 ALTER TABLE `crule_role` DISABLE KEYS */;
-INSERT INTO `crule_role` VALUES (3,1,'2'),(4,2,'3');
+INSERT INTO `crule_role` VALUES (3,1,2),(4,2,3);
 /*!40000 ALTER TABLE `crule_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -360,4 +360,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-02-17 17:18:03
+-- Dump completed on 2010-03-03 14:38:09
