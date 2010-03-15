@@ -1,6 +1,7 @@
 <?php
 
 $this	->headScript()
+		->offsetSetFile(1, '/zkernel/js/jquery/jquery.js')
 		->offsetSetFile(100, '/js/main.js');
 
 $this	->inlineScript()
@@ -10,10 +11,10 @@ $this	->headLink()
 		->offsetSetAlternate(150, array('rel' => 'favicon', 'href' => '/favicon.ico'))
 		->offsetSetStylesheet(100, '/img/style.css', 'all');
 
-$this	->headMeta($this->ah('txt', 'meta_keywords'), 'keywords')
-		->headMeta($this->ah('txt', 'meta_description'), 'description');
+$this	->headMeta($this->txt('meta_keywords'), 'keywords')
+		->headMeta($this->txt('meta_description'), 'description');
 
-$this	->headTitle($this->ah('txt', 'site_title'), 'PREPEND')->setSeparator(' - ');
+$this	->headTitle($this->txt('site_title'), 'PREPEND')->setSeparator(' - ');
 
 echo $this->doctype('HTML5')
 
@@ -28,6 +29,6 @@ echo $this->doctype('HTML5')
 	<body>
 		<?php echo $this->layout()->content ?>
 		<?php echo $this->headSingle() ?>
-		<?php echo $this->inlineScript() ?>
+		<?php echo $this->inlineSingle('file') ?>
 	</body>
 </html>
