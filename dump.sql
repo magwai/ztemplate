@@ -68,7 +68,7 @@ CREATE TABLE `cmenu` (
   KEY `i_orderid` (`orderid`),
   KEY `i_resource` (`resource`),
   KEY `i_show_it` (`show_it`)
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +77,7 @@ CREATE TABLE `cmenu` (
 
 LOCK TABLES `cmenu` WRITE;
 /*!40000 ALTER TABLE `cmenu` DISABLE KEYS */;
-INSERT INTO `cmenu` VALUES (6,'Страницы',0,16,'page',2,'','','1'),(7,'Настройки',13,8,'cconf',3,'','','1'),(8,'Участники',13,9,'',3,'','','1'),(9,'Пользователи',8,10,'cuser',3,'','','1'),(10,'Роли',8,11,'crole',3,'','','1'),(11,'Ресурсы',8,12,'cresource',3,'','','1'),(12,'Правила',8,13,'crule',3,'','','1'),(13,'Панель',0,14,'',3,'','','1'),(14,'Меню',13,15,'cmenu',3,'','','1'),(46,'Роутинг',13,37,'url',3,'','','1'),(24,'Интерфейс',0,15,'txt',2,'','','1'),(34,'uhiuhg',NULL,36,'',1,'','','1'),(49,'Phpmyadmin',13,38,'query',3,'','','1');
+INSERT INTO `cmenu` VALUES (6,'Страницы',0,17,'page',2,'','','1'),(7,'Настройки',13,8,'cconf',3,'','','1'),(8,'Участники',13,9,'',3,'','','1'),(9,'Пользователи',8,10,'cuser',3,'','','1'),(10,'Роли',8,11,'crole',3,'','','1'),(11,'Ресурсы',8,12,'cresource',3,'','','1'),(12,'Правила',8,13,'crule',3,'','','1'),(13,'Панель',0,14,'',3,'','','1'),(14,'Меню',13,15,'cmenu',3,'','','1'),(46,'Роутинг',13,37,'url',3,'','','1'),(24,'Интерфейс',0,16,'txt',2,'','','1'),(34,'uhiuhg',NULL,36,'',1,'','','1'),(49,'Phpmyadmin',13,38,'query',3,'','','1'),(50,'Меню',0,15,'menu',2,'','','1');
 /*!40000 ALTER TABLE `cmenu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,6 +267,40 @@ INSERT INTO `cuser` VALUES (2,'administrator','6fbeb80e433b0a05920c1e3a4d1dcbe91
 UNLOCK TABLES;
 
 --
+-- Table structure for table `menu`
+--
+
+DROP TABLE IF EXISTS `menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `orderid` int(11) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `key` varchar(20) DEFAULT NULL,
+  `controller` varchar(255) DEFAULT NULL,
+  `action` varchar(255) DEFAULT NULL,
+  `param` varchar(255) DEFAULT NULL,
+  `route` varchar(255) DEFAULT NULL,
+  `parentid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `i_sid` (`key`),
+  KEY `i_orderid` (`orderid`),
+  KEY `i_parentid` (`parentid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu`
+--
+
+LOCK TABLES `menu` WRITE;
+/*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+/*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `page`
 --
 
@@ -360,4 +394,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-04-01 14:54:56
+-- Dump completed on 2010-04-01 15:25:01
