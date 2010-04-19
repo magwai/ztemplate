@@ -1,11 +1,12 @@
 <?php
 
-$this	->headScript()
-		->offsetSetFile(1, '/zkernel/js/jquery/jquery.js')
-		->offsetSetFile(100, '/js/main.js');
-
 $this	->inlineScript()
 		->offsetSetScript(1, '$(function() { ds.init(); });');
+
+$this	->headScript()
+		->offsetSetFile(1, '/zkernel/js/jquery/jquery.js')
+		->offsetSetFile(100, '/js/main.js')
+		->offsetSetFile(200, $this->inlineSingle('filename'));
 
 $this	->headLink()
 		->offsetSetAlternate(150, array('rel' => 'favicon', 'href' => '/favicon.ico'))
@@ -29,6 +30,5 @@ echo $this->doctype('HTML5')
 	<body>
 		<?php echo $this->layout()->content ?>
 		<?php echo $this->headSingle() ?>
-		<?php echo $this->inlineSingle('file') ?>
 	</body>
 </html>
