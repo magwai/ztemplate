@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.1.37, for debian-linux-gnu (i486)
+-- MySQL dump 10.13  Distrib 5.1.41, for debian-linux-gnu (i486)
 --
 -- Host: localhost    Database: ztemplate
 -- ------------------------------------------------------
--- Server version	5.1.37-1ubuntu5.1
+-- Server version	5.1.41-3ubuntu12.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -68,7 +68,7 @@ CREATE TABLE `cmenu` (
   KEY `i_orderid` (`orderid`),
   KEY `i_resource` (`resource`),
   KEY `i_show_it` (`show_it`)
-) ENGINE=MyISAM AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -77,7 +77,7 @@ CREATE TABLE `cmenu` (
 
 LOCK TABLES `cmenu` WRITE;
 /*!40000 ALTER TABLE `cmenu` DISABLE KEYS */;
-INSERT INTO `cmenu` VALUES (6,'Страницы',0,17,'page',2,'','','1'),(7,'Настройки',13,8,'cconf',3,'','','1'),(8,'Участники',13,9,'',3,'','','1'),(9,'Пользователи',8,10,'cuser',3,'','','1'),(10,'Роли',8,11,'crole',3,'','','1'),(11,'Ресурсы',8,12,'cresource',3,'','','1'),(12,'Правила',8,13,'crule',3,'','','1'),(13,'Панель',0,14,'',3,'','','1'),(14,'Меню',13,15,'cmenu',3,'','','1'),(46,'Роутинг',13,37,'url',3,'','','1'),(24,'Интерфейс',0,16,'txt',2,'','','1'),(34,'uhiuhg',NULL,36,'',1,'','','1'),(49,'Phpmyadmin',13,38,'query',3,'','','1'),(50,'Меню',0,15,'menu',2,'','','1'),(51,'Генератор',13,39,'generator',3,'','','1'),(52,'Вьюшки',51,40,'generatorview',3,'','','0'),(53,'Модели',51,41,'generatormodel',3,'','','0');
+INSERT INTO `cmenu` VALUES (6,'Страницы',0,17,'page',2,'','','1'),(7,'Настройки',13,8,'cconf',3,'','','1'),(8,'Участники',13,9,'',3,'','','1'),(9,'Пользователи',8,10,'cuser',3,'','','1'),(10,'Роли',8,11,'crole',3,'','','1'),(11,'Ресурсы',8,12,'cresource',3,'','','1'),(12,'Правила',8,13,'crule',3,'','','1'),(13,'Панель',0,14,'',3,'','','1'),(14,'Меню',13,15,'cmenu',3,'','','1'),(46,'Роутинг',13,37,'url',3,'','','1'),(24,'Интерфейс',0,16,'txt',2,'','','1'),(34,'uhiuhg',NULL,36,'',1,'','','1'),(49,'Phpmyadmin',13,38,'query',3,'','','1'),(50,'Меню',0,15,'menu',2,'','','1'),(51,'Генератор',13,39,'generator',3,'','','1'),(52,'Вьюшки',51,40,'generatorview',3,'','','0'),(53,'Модели',51,41,'generatormodel',3,'','','0'),(54,'Развернуть',13,42,'deploy',3,'','','1');
 /*!40000 ALTER TABLE `cmenu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -394,4 +394,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2010-04-22 15:46:33
+-- Dump completed on 2010-05-27 17:44:04
