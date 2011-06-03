@@ -10,14 +10,14 @@ $this	->headScript()
 
 $this	->headLink()
 		->offsetSetAlternate(150, array('rel' => 'favicon', 'href' => '/favicon.ico'))
+		->offsetSetStylesheet(1, '/zkernel/img/reset.css', 'all')
 		->offsetSetStylesheet(100, '/img/style.css', 'all');
-
-$this	->headMeta($this->txt('meta_keywords'), 'keywords')
-		->headMeta($this->txt('meta_description'), 'description');
 
 $this	->headTitle($this->txt('site_title'), 'PREPEND')->setSeparator(' - ');
 
-echo $this->doctype('HTML5')
+$this->meta();
+
+echo $this->doctype('HTML5');
 
 ?>
 <html>
@@ -25,7 +25,7 @@ echo $this->doctype('HTML5')
 		<meta charset=utf-8>
 		<?php echo $this->headMeta() ?>
 		<?php echo $this->headTitle() ?>
-		<?php echo $this->headLink() ?>
+		<?php echo $this->linkSingle() ?>
 	</head>
 	<body>
 		<?php echo $this->layout()->content ?>

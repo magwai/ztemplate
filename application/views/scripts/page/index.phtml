@@ -1,9 +1,8 @@
 <?php
 
-$data_valid = $this->page($this->id, 'all');
-
-$this->headTitle($data_valid->title);
-
-echo $data_valid->message_valid;
+$cv = $this->page($this->id, 'all');
+$this->meta('auto', $cv->title);
+$this->meta('page_'.$cv->id);
+echo $cv->message_valid;
 
 ?>
