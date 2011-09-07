@@ -263,7 +263,7 @@ CREATE TABLE `cuser` (
 
 LOCK TABLES `cuser` WRITE;
 /*!40000 ALTER TABLE `cuser` DISABLE KEYS */;
-INSERT INTO `cuser` VALUES (2,'administrator','6fbeb80e433b0a05920c1e3a4d1dcbe91749c4bf',2,''),(3,'admin','6fbeb80e433b0a05920c1e3a4d1dcbe91749c4bf',3,'');
+INSERT INTO `cuser` VALUES (2,'administrator','72ba07915dfe8984cf89fb70e4daa060d7044cc3',2,''),(3,'admin','72ba07915dfe8984cf89fb70e4daa060d7044cc3',3,'');
 /*!40000 ALTER TABLE `cuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
