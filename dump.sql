@@ -38,16 +38,6 @@ CREATE TABLE `cconf` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `cconf`
---
-
-LOCK TABLES `cconf` WRITE;
-/*!40000 ALTER TABLE `cconf` DISABLE KEYS */;
-INSERT INTO `cconf` VALUES (209,'','','wysiwyg','ck','text');
-/*!40000 ALTER TABLE `cconf` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `cmenu`
 --
 
